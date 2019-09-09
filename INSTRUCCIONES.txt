@@ -1,0 +1,19 @@
+===========================================================================
+Instrucciones:
+===========================================================================
+
+1. Descargar el proyecto *AngularCRUD*
+
+2. Crear la Base de Datos (Ejecución Query) == Carpeta "DATABASE" / archivo *database.sql*
+
+2. Inicializar la conexion de los servicios (SERVER):
+* Ejecutar desde la consola el comando de angular cli (*npm run dev*):
+Ejemplo:
+....\AngularCRUD\server> npm run dev
+
+3. Inicializar el cliente (FRONT-END):
+* Ejecutar desde la consola el comando de angular cli (*ng serve*):
+Ejemplo:
+....\AngularCRUD\client> ng serve
+
+4. Podrás testear el desarrollo con las funcionalidades requeridas.
