@@ -20,7 +20,7 @@ Nota: En caso de error
 #Could not find module "@angular-devkit/build-angular"
 Favor instalar (npm install --save-dev @angular-devkit/build-angular)
 
-4. Si segiste de forma correcta los pasos anteriores, podrás testear el desarrollo con las funcionalidades requeridas.
+4. Si seguiste de forma correcta los pasos anteriores, podrás testear el desarrollo con las funcionalidades requeridas.
 
 
 
