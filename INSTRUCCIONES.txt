@@ -4,16 +4,26 @@ Instrucciones:
 
 1. Descargar el proyecto *AngularCRUD*
 
-2. Crear la Base de Datos (EjecuciÛn Query) == Carpeta "DATABASE" / archivo *database.sql*
+2. Crear la Base de Datos (Ejecuci√≥n Query) == Carpeta "DATABASE" / archivo *database.sql*
 
 2. Inicializar la conexion de los servicios (SERVER):
 * Ejecutar desde la consola el comando de angular cli (*npm run dev*):
 Ejemplo:
-....\AngularCRUD\server> npm run dev
+....\ZAVTest_Developer-master\server> npm run dev
 
 3. Inicializar el cliente (FRONT-END):
 * Ejecutar desde la consola el comando de angular cli (*ng serve*):
 Ejemplo:
-....\AngularCRUD\client> ng serve
+....\ZAVTest_Developer-master\client> ng serve
 
-4. Podr·s testear el desarrollo con las funcionalidades requeridas.
+Nota: En caso de error 
+#Could not find module "@angular-devkit/build-angular"
+Favor instalar (npm install --save-dev @angular-devkit/build-angular)
+
+4. Si segiste de forma correcta los pasos anteriores, podr√°s testear el desarrollo con las funcionalidades requeridas.
+
+
+
+
+
+
