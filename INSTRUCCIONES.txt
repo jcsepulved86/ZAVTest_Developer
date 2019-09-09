@@ -2,7 +2,7 @@
 Instrucciones:
 ===========================================================================
 
-1. Descargar el proyecto *AngularCRUD*
+1. Descargar el proyecto *ZAVTest_Developer*
 
 2. Crear la Base de Datos (Ejecución Query) == Carpeta "DATABASE" / archivo *database.sql*
 
