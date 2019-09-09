@@ -1,0 +1,65 @@
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+            <label for="nombre">Nombre *</label>
+            <input type="text" class="form-control" id="nombre" required [(ngModel)]="game.nombre" name="nombre" #nombre="ngModel" autofocus>
+            <div [hidden]="nombre.valid || nombre.pristine" class="alert alert-danger">
+              <div *ngIf="nombre.errors?.required">
+                Este campo es requerido.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mail">Email *</label>
+              <input type="text" class="form-control" id="mail" required [(ngModel)]="game.mail" name="mail" #mail="ngModel" email>
+            <div [hidden]="mail.valid || mail.pristine" class="alert alert-danger">
+                <div *ngIf="mail.errors?.required">
+                  Este campo es requerido.
+                </div>
+              </div>                
+          </div>
+          <div class="form-group">
+            <label for="phone">Celular *</label>
+              <input type="text" class="form-control" id="phone" required [(ngModel)]="game.phone" name="phone" #phone="ngModel" number>
+            <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+                <div *ngIf="phone.errors?.required">
+                  Este campo es requerido.
+                </div>
+              </div>         
+          </div>        
+          <div class="form-group">
+              <label for="motivo">Motivo: *</label>
+              <select class="form-control" id="motivo" required [(ngModel)]="game.motivo" name="motivo" #motivo="ngModel">
+                <option value="Compra">Compra</option>
+                <option value="Venta">Venta</option>
+                <option value="Alquiler">Alquiler</option>
+              </select>
+              <div [hidden]="motivo.valid || motivo.pristine" class="alert alert-danger">
+                  <div *ngIf="phone.errors?.required">
+                    Este campo es requerido.
+                  </div>
+                </div>   
+            </div>
+        <div class="form-group">
+          <textarea name="comentarios" [(ngModel)]="game.comentarios" rows="2" placeholder="Comentarios" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? updateGame() : saveNewGame()">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <h3>{{game.nombre == '' ? 'Nombre' : game.nombre}}</h3>
+    <h6>{{game.mail == '' ? 'Mail' : game.mail}}</h6>
+    <br>
+    <p>{{game.phone == '' ? 'Phone' : game.phone}}</p>
+    <p>{{game.motivo == '' ? 'Motivo' : game.motivo}}</p>
+    <p>{{game.comentarios == '' ? 'Comentarios' : game.comentarios}}</p>
+    <p>{{game.created_at | date: 'yyyy-MM-dd'}}</p>
+  </div>
+</div>
